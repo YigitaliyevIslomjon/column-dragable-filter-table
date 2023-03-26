@@ -62,12 +62,12 @@ export const useDynamicTable = (columns: any[]) => {
   const content = (
     <Checkbox.Group
       defaultValue={defaultFilterColumnsKey}
-      style={{ minWidth: "300px", maxWidth: "600px" }}
+      style={{ minWidth: "200px", maxWidth: "400px" }}
       onChange={handleOnChangeCheckBox}
     >
       <Row>
         {columns.map(({ key, dataIndex }) => (
-          <Col key={key} span={4}>
+          <Col key={key} span={8}>
             <Checkbox value={key}>{dataIndex}</Checkbox>
           </Col>
         ))}
