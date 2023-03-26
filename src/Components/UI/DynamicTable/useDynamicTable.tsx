@@ -3,7 +3,7 @@ import { CheckboxValueType } from "antd/es/checkbox/Group";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
-export const useTableState = (columns: any[]) => {
+export const useDynamicTable = (columns: any[]) => {
   const [tableColumns, setTableColumns] = useState<any[]>(columns);
   let [searchParams, setSearchParams] = useSearchParams();
 

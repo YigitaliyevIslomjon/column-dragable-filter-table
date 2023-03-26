@@ -1,6 +1,6 @@
 import { Button, Popover, Table } from "antd";
 import ReactDragListView from "react-drag-listview";
-import { useTableState } from "./useTableState";
+import { useDynamicTable } from "./useDynamicTable";
 
 type DynamicTableProps = {
   rows: any[];
@@ -9,7 +9,7 @@ type DynamicTableProps = {
 
 const DynamicTable = ({ columns, rows }: DynamicTableProps) => {
   const { tableColumns, handleOnDragEnd, content, handleColumnsOrder } =
-    useTableState(columns);
+    useDynamicTable(columns);
 
   return (
     <ReactDragListView.DragColumn
