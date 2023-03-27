@@ -76,9 +76,9 @@ export const useDynamicTable = (columns: any[]) => {
   );
 
   useEffect(() => {
-    const newColumns = getDefaultFilterColumnsKey(columns, searchParams)
-      .map((key: string) => columns.find((col) => col.key === key))
-      .filter(Boolean);
+    const newColumns = getDefaultFilterColumnsKey(columns, searchParams).map(
+      (key: string) => columns.find((col) => col.key === key)
+    );
     setTableColumns(newColumns);
   }, [columns, searchParams]);
 

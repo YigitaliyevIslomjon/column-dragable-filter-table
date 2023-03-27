@@ -35,7 +35,7 @@ const DynamicTable = ({ columns, rows }: DynamicTableProps) => {
               content={content}
               trigger="click"
             >
-              <Button>filter</Button>
+              <Button type="dashed">filter</Button>
             </Popover>
           </div>
         )}
